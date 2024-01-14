@@ -1,11 +1,7 @@
+import Home from "./components/Home";
+
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Celebrare assignment</h1>
-    </div>
-  );
-}
+const App = () => <Home />;
 
 export default App;
