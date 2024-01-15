@@ -126,6 +126,7 @@ class Home extends Component {
       cursorY: event.clientY,
     });
   };
+
   render() {
     const {
       text,
@@ -196,24 +197,26 @@ class Home extends Component {
                 className="input"
               />
             </div>
-            <div className="all-buttons">
-              <button type="button" onClick={this.onAddText} className="btn">
-                Change Text
-              </button>
-              <button type="text" onClick={this.moveText} className="btn">
-                Move Text
-              </button>
-              <button type="text" onClick={this.notMoveText} className="btn">
-                Not Move Text
-              </button>
-            </div>
-            <div>
-              <button type="button" onClick={this.undo}>
-                Undo
-              </button>
-              <button type="button" onClick={this.redo}>
-                Redo
-              </button>
+            <div className="all-but-undo-redo-con">
+              <div className="all-buttons">
+                <button type="button" onClick={this.onAddText} className="btn">
+                  Add Text
+                </button>
+                <button type="text" onClick={this.moveText} className="btn">
+                  Move Text
+                </button>
+                <button type="text" onClick={this.notMoveText} className="btn">
+                  Not Move Text
+                </button>
+              </div>
+              <div className="undo-redo-con">
+                <button type="button" onClick={this.undo}>
+                  Undo
+                </button>
+                <button type="button" onClick={this.redo}>
+                  Redo
+                </button>
+              </div>
             </div>
           </div>
         </div>
