@@ -140,19 +140,21 @@ class Home extends Component {
     } = this.state;
     return (
       <div className="con">
-        <h1
-          style={{
-            left: cursorX,
-            top: cursorY,
-            position: "absolute",
-            transition: "top 0.3s ease-out",
-            fontFamily: fontFamily,
-            fontSize: fontSize,
-            color: color,
-          }}
-        >
-          {addedText}
-        </h1>
+        <div className="head-con">
+          <h1
+            style={{
+              left: cursorX,
+              top: cursorY,
+              position: "absolute",
+              transition: "top 0.3s ease-out",
+              fontFamily: fontFamily,
+              fontSize: fontSize,
+              color: color,
+            }}
+          >
+            {addedText}
+          </h1>
+        </div>
         <div className="select-button-con">
           <div className="select-head-con">
             <div className="select-containers">
