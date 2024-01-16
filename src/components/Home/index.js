@@ -36,7 +36,7 @@ class Home extends Component {
   state = {
     arrayOfObjects: arrayOfObjects,
     text: "",
-    addedText: "",
+    addedText: "celebrare",
     cursorX: 0,
     cursorY: 0,
     history: [],
